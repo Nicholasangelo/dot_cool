@@ -1,6 +1,5 @@
 import * as React from "react"
-import { Link } from "gatsby"
-import jenny404 from '../images/jenny404.jpg';
+import jenny404 from '../images/Jenny404.jpg';
 
 const pageStyle = {
   display: 'flex',
