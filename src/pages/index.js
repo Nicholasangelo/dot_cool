@@ -1,11 +1,10 @@
 import * as React from 'react';
-import NotFoundPage from './404';
+import FourOhFour from '../components/FourOhFour/FourOhFour.jsx';
 
-// markup
 const IndexPage = () => (
   <main>
     <title>nickyb.cool</title>
-    <NotFoundPage />
+    <FourOhFour />
   </main>
 );
 

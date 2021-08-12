@@ -1,24 +1,11 @@
-import * as React from "react"
-import jenny404 from '../images/Jenny404.jpg';
+import * as React from 'react';
+import FourOhFour from '../components/FourOhFour/FourOhFour.jsx';
 
-const pageStyle = {
-  display: 'flex',
-  width: '100%',
-}
+const IndexPage = () => (
+  <main>
+    <title>nickyb.cool</title>
+    <FourOhFour />
+  </main>
+);
 
-const imgStyle = {
-  width: '100%'
-}
-// markup
-const NotFoundPage = () => {
-  return (
-    <main style={pageStyle}>
-      <title>Not found</title>
-      <section>
-        <img style={imgStyle} src={jenny404} />
-      </section>
-    </main>
-  )
-}
-
-export default NotFoundPage
+export default IndexPage;
