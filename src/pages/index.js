@@ -12,7 +12,9 @@ const IndexPage = () => (
       <Menu />
       <WindowTo />
     </div>
-    <Social />
+    <div class='bottom-strip'>
+      <Social />
+    </div>
   </main>
 );
 

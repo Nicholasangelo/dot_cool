@@ -27,15 +27,15 @@ module.exports = {
           patterns: [], // string or array of paths/files/globs to include related only to Prettier
           ignorePatterns: [], // string or array of paths/files/globs to exclude related only to Prettier
           customOptions: {
-            'printWidth': 140,
-            'trailingComma': 'es5',
-            'bracketSpacing': true,
-            'jsxBracketSameLine': true,
-            'singleQuote': true,
-            'jsxSingleQuote': true,
-            'quoteProps': 'consistent',
-            'trailingComma': 'all',
-            'prettier.tabWidth': 2,
+            // 'printWidth': 140,
+            // 'trailingComma': 'es5',
+            // 'bracketSpacing': true,
+            // 'jsxBracketSameLine': true,
+            // 'singleQuote': true,
+            // 'jsxSingleQuote': true,
+            // 'quoteProps': 'consistent',
+            // 'trailingComma': 'all',
+            // 'prettier.tabWidth': 2,
           }, // see: https://prettier.io/docs/en/options.html
         },
         eslint: {
