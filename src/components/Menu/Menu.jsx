@@ -4,7 +4,7 @@ import "@fontsource/federo";
 
 const fontType = {
 	fontFamily: "'Federo', sans-serif",
-} 
+}
 const Menu = () => {
 	return (
 		<div class="menu">
