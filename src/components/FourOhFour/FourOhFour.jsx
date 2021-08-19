@@ -1,16 +1,15 @@
 import * as React from "react"
 import jenny404 from '../../images/Jenny404.jpg';
-import { pageStyle, imgStyle } from './FourOhFourStyles';
+import { PageStyle, imgStyle } from './FourOhFourStyles';
 
-// markup
 const FourOhFour = () => {
 	return (
-		<main style={pageStyle}>
+		<PageStyle>
 			<title>Not found</title>
 			<section>
 				<img style={imgStyle} src={jenny404} />
 			</section>
-		</main>
+		</PageStyle>
 	)
 }
 
