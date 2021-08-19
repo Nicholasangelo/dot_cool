@@ -6,7 +6,7 @@ export const SocialWrapper = styled.div`
 	height: 40px;
 	padding-right: 90px;
 	width: 100%;
-	justify-content: end;
+	justify-content: flex-end;
 	@media (max-width: 898px) {
 		justify-content: center;
 		padding-right: 0px;
