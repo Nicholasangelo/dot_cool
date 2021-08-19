@@ -3,11 +3,18 @@ import Nlink from '../Nlink/Nlink';
 export const SocialWrapper = styled.div`
 	display: flex;
 	flex-direction: row;
-	width: 90%;
-	justify-content: flex-end;
 	height: 40px;
+	padding-right: 90px;
+	width: 100%;
+	justify-content: end;
+	@media (max-width: 898px) {
+		justify-content: center;
+		padding-right: 0px;
+	}
 `
-
+export const LinkWrapper = styled.div`
+	width: 50px;
+`
 export const NlinkStyled = styled(Nlink)`
 text-decoration: none;
 	&:hover{

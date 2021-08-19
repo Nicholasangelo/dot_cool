@@ -1,16 +1,16 @@
 import * as React from "react";
 import { iconList } from '../../icons/index';
-import { SocialWrapper, NlinkStyled } from './SocialStyles';
+import { SocialWrapper, NlinkStyled, LinkWrapper } from './SocialStyles';
 
 const Social = () => {
 
 	console.log(iconList.map((icon) => icon))
 	return (
-		<SocialWrapper class="social-links">
+		<SocialWrapper>
 			{iconList.map((icon) => (
-				<div class="link">
+				<LinkWrapper>
 					<NlinkStyled linkUrl={icon.ref} image={icon}  />
-				</div>
+				</LinkWrapper>
 			))}
 		</SocialWrapper>
 	)
