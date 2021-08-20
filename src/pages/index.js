@@ -1,18 +1,12 @@
 import * as React from 'react';
 import "../main.css";
-import FourOhFour from '../components/FourOhFour/FourOhFour.jsx';
-import Menu from '../components/Menu/Menu';
-import WindowTo from '../components/WindowTo/WindowTo';
-import Social from '../components/Social/Social';
+import { MainStrip, Social } from '../components';
 
 const IndexPage = () => (
   <main id="entry">
     <title>nickyb.cool</title>
-    <div class="main-strip">
-      <Menu />
-      <WindowTo />
-    </div>
-    <div class='bottom-strip'>
+    <MainStrip />
+    <div className='bottom-strip'>
       <Social />
     </div>
   </main>
