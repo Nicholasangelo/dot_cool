@@ -1,18 +1,27 @@
-import * as React from "react";
+import * as React from 'react';
 import './menu.css';
-import "@fontsource/federo";
+import '@fontsource/federo';
+import WindowTo from '../WindowTo/WindowTo';
 
 const fontType = {
-	fontFamily: "'Federo', sans-serif",
+	fontFamily: '"Federo", sans-serif',
 }
-const Menu = () => {
+
+const Menu = ({ topics }) => {
+	const [topic, setTopic] = React.useState(topics[0].name);
+
+	const handleClick = (e) => {
+		setTopic(e.target.dataset.id);
+	}
+
+	const MenuItem = (t) => <h3 style={fontType} className={`nav${topic === t.text ? ' active' : ''}`} data-id={t.name} onClick={handleClick} key={t.name}>{t.text}</h3>
 	return (
-		<div class="menu">
-			<h3 style={fontType} class="nav" data-id="whoamiDiv">WHO I AM</h3>
-			<h3 style={fontType} class="nav" data-id="whatiknowDiv">WHAT I KNOW</h3>
-			<h3 style={fontType} class="nav" data-id="whatidoDiv">WHAT I'VE DONE</h3>
-			<h3 style={fontType} class="nav" data-id="sketchbookDiv">DOODLES</h3>
-		</div>
+		<>
+			<div className='menu'>
+				{topics.map(MenuItem)}
+			</div>
+			<WindowTo activeTopic={topic} />
+		</>
 	)
 }
 

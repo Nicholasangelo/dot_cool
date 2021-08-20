@@ -21,6 +21,7 @@
 .main-strip {
     display: flex;
     flex-direction: row;
+    height: 65%;
     width: 100%;
     padding-top: 90px;
 }

@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import Nlink from '../Nlink/Nlink';
+import Nlink from '../../elements/Nlink/Nlink';
 export const SocialWrapper = styled.div`
 	display: flex;
 	flex-direction: row;
