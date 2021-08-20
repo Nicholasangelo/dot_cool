@@ -13,7 +13,6 @@ const topicMap = {
 }
 
 const WindowTo = ({ activeTopic }) => {
-	console.log('activeTopic', topicMap[activeTopic])
 	return (
 		<WindowStyle className="window-to">
 			{topicMap[activeTopic]}
