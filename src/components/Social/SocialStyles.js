@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import Nlink from '../../elements/Nlink/Nlink';
+
 export const SocialWrapper = styled.div`
 	display: flex;
 	flex-direction: row;
@@ -11,10 +12,10 @@ export const SocialWrapper = styled.div`
 		justify-content: center;
 		padding-right: 0px;
 	}
-`
+`;
 export const LinkWrapper = styled.div`
 	width: 50px;
-`
+`;
 export const NlinkStyled = styled(Nlink)`
 text-decoration: none;
 	&:hover{
@@ -22,4 +23,4 @@ text-decoration: none;
 		box-shadow: 2px 2px 6px inset pink;
 		cursor: pointer;
 	}
-`
+`;
