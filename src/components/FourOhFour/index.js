@@ -1,1 +1,1 @@
-export { default as FourOhFour } from './FourOhFour.jsx';
+export default as FourOhFour from './FourOhFour.jsx';
