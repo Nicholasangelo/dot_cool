@@ -2,7 +2,6 @@
 	background-image: url(./images/nickyb.png);
 	display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     overflow: hidden;
     height: 100vh;
@@ -18,46 +17,9 @@
         background-position-y: -29px;
     }
 } */
-.main-strip {
-    display: flex;
-    flex-direction: row;
-    height: 65%;
-    width: 100%;
-    padding-top: 90px;
-}
-@media (max-width: 898px) {
-    .main-strip {
-        flex-direction: column;
-        align-items: center;
-    }
-}
 
 
-.main-strip .menu {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 25%;
-    text-align: right;
-    padding-right: 15px;
-}
-@media (max-width: 898px) {
-    .main-strip .menu {
-        flex-direction: row;
-        width: 80%;
-        justify-content: space-between;
-    }
-}
 
-.main-strip .menu .nav:hover {
-    cursor: not-allowed;
-}
-
-.bottom-strip {
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
-}
 img {
     height: 100%;
 }

@@ -1,5 +1,6 @@
 import * as React from 'react';
 import Menu from '../Menu/Menu';
+import { MainStripWrapper } from './MainStripStyled';
 
 const topics = [
 	{ name: 'whoami', text: 'WHO AM I' },
@@ -10,9 +11,9 @@ const topics = [
 
 const MainStrip = () => {
 	return (
-		<div className="main-strip">
+		<MainStripWrapper>
 			<Menu topics={topics} />
-		</div>
+		</MainStripWrapper>
 	)
 };
 
