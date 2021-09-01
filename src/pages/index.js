@@ -1,12 +1,7 @@
 import * as React from 'react';
+import { Top } from '../sharedStyles';
 import '../main.css';
 import { MainStrip, Social } from '../components';
-
-const top = {
-    width: '100%',
-    height: '25%',
-    margin: '0',
-};
 
 const indexLayout = {
     height: '65%',
@@ -23,7 +18,7 @@ const bottomStrip = {
 const IndexPage = () => (
     <main id='entry'>
         <title>nickyb.cool</title>
-        <div style={top} />
+        <Top />
         <div style={indexLayout}>
             <MainStrip />
         </div>

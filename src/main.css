@@ -12,11 +12,16 @@
     background-repeat: no-repeat;
     background-position-y: -29px;
 }
-/* @media (max-width: 898px) {
+ @media (max-width: 899px) {
     #entry {
-        background-position-y: -29px;
+        background-position-x: 25vw;;
     }
-} */
+}
+    @media (max-width: 700px) {
+ #entry {
+        background-position-y: -17px;
+    }
+    }
 
 
 
