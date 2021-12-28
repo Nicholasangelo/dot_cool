@@ -21,6 +21,7 @@ module.exports = {
         'react/jsx-indent': ['error', 4],
         'react/jsx-indent-props': ['error', 4],
         'react/require-default-props': 'off',
+        'import/prefer-default-export': 'off',
         indent: ['error', 4],
         curly: 0,
     },
