@@ -1,5 +1,5 @@
 import * as React from 'react';
-import FourOhFour from '../components/index';
+import { FourOhFour } from '../components/index';
 
 const FourOhFourPage = () => (
     <main>
