@@ -1,7 +1,7 @@
 import * as React from 'react';
 import './doodles.css';
 import { doodles } from '../../../../images/sketches/index';
-import { Doods } from './doodleStyles';
+import { Doods, Doodtainer } from './doodleStyles';
 
 const DoodlesComponent = () => {
     const [active, setActive] = React.useState(doodles[0].name);
@@ -10,8 +10,8 @@ const DoodlesComponent = () => {
     };
 
     return (
-        <div className='doodles'>
-            <container id='sketchbookContainer' className='options'>
+        <Doodtainer className='doodles'>
+            <section id='sketchbookContainer'>
                 <div className='options'>
                     {doodles.map((doodle) => (
                         <Doods
@@ -19,7 +19,8 @@ const DoodlesComponent = () => {
                             data-name={doodle.name}
                             className={active === doodle.name ? 'option active' : 'option'}
                             doodle={doodle.src}
-                            onClick={handleDoodClick}>
+                            onClick={handleDoodClick}
+                        >
                             <div className='label'>
                                 <div className='info'>
                                     <div className='main' />
@@ -29,8 +30,8 @@ const DoodlesComponent = () => {
                         </Doods>
                     ))}
                 </div>
-            </container>
-        </div>
+            </section>
+        </Doodtainer>
     );
 };
 
