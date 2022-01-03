@@ -11,43 +11,44 @@ import {
     glassesStyles,
     jeansStyles,
 } from './whoamiStyled';
+import { HAT_TIP, STARE_TIP, FLOWER_TIP, BEAD_TIP, GLASSES_TIP, JEANS_TIP } from './whoami.strings';
 import Tooltip from '../../../Tooltip/Tooltip';
 
 const tips = [
     {
         name: 'hat',
         style: hatStyles,
-        text: 'Practical problem solving without sacrificing an intuitve sense of style and cohesion, wither it is shade from the sun or complex UI systems',
+        text: HAT_TIP,
         align: 'left',
     },
     {
         name: 'stare',
         style: stareStyles,
-        text: 'Not bothered',
+        text: STARE_TIP,
         align: 'right',
     },
     {
         name: 'flower',
         style: flowerStyles,
-        text: 'Sensitive. Aware. Utilizes the inspiration of nature for finding creative solutions rather than reinventing what has already been provided.',
+        text: FLOWER_TIP,
         align: 'left',
     },
     {
         name: 'beads',
         style: beadsStyles,
-        text: 'Mindfull and well traveled. Able to find peace with clear eyes and heart in any situation.',
+        text: BEAD_TIP,
         align: 'right',
     },
     {
         name: 'glasses',
         style: glassesStyles,
-        text: 'Always prepared at multiple levels, and with a fallback to tackle unforseen issues',
+        text: GLASSES_TIP,
         align: 'right',
     },
     {
         name: 'jeans',
         style: jeansStyles,
-        text: 'Casual. Durable. Able to withstand use and gets better with age and understanding.',
+        text: JEANS_TIP,
         align: 'left',
     },
 ];
@@ -56,7 +57,7 @@ const WhoamiComponent = () => (
     <ImgWrapper className='whoiam_img' bgImg={cowboyNick}>
         <img style={imgStyle} src={cowboyNick} alt='alt stuff' />
         {tips.map((tip) => (
-            <FeatWrapper style={tip.style}>
+            <FeatWrapper key={tip.name} style={tip.style}>
                 <Tooltip text={tip.text} toolName='feature-tip' align={tip.align} />
             </FeatWrapper>
         ))}

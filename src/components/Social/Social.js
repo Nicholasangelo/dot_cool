@@ -5,7 +5,7 @@ import { SocialWrapper, NlinkStyled, LinkWrapper } from './SocialStyles';
 const Social = () => (
     <SocialWrapper>
         {iconList.map((icon) => (
-            <LinkWrapper>
+            <LinkWrapper key={icon.name}>
                 <NlinkStyled linkUrl={icon.ref} image={icon} />
             </LinkWrapper>
         ))}
