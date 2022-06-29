@@ -11,7 +11,7 @@ const DoodlesComponent = () => {
 
     return (
         <div className='doodles'>
-            <container id='sketchbookContainer' className='options'>
+            <section id='sketchbookContainer' className='options'>
                 <div className='options'>
                     {doodles.map((doodle) => (
                         <Doods
@@ -19,7 +19,8 @@ const DoodlesComponent = () => {
                             data-name={doodle.name}
                             className={active === doodle.name ? 'option active' : 'option'}
                             doodle={doodle.src}
-                            onClick={handleDoodClick}>
+                            onClick={handleDoodClick}
+                        >
                             <div className='label'>
                                 <div className='info'>
                                     <div className='main' />
@@ -29,7 +30,7 @@ const DoodlesComponent = () => {
                         </Doods>
                     ))}
                 </div>
-            </container>
+            </section>
         </div>
     );
 };

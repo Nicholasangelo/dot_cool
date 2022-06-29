@@ -1,11 +1,21 @@
-import * as React from "react";
+import * as React from 'react';
+import gameGrass from '../../../../images/gameGrass.jpg';
+import { logos } from '../../../../logos/index.js';
+import { GameBoard } from './whatiknowStyled';
+import { ScoreBoard, LogoFloat } from './components';
 
 const WhatiknowComponent = () => {
+	console.log('grass', gameGrass);
 	return (
-		<div >
-			<h1>what i know</h1>
-		</div>
+			<GameBoard bg={gameGrass}>
+				{logos.map((logo, i) => (
+					<LogoFloat image={logo.src} startingPos={''} />
+				)
+				)}
+				<ScoreBoard score={''} logged={[]}/>
+				<h1>what i know</h1>
+			</GameBoard>
 	)
-}
+};
 
 export default WhatiknowComponent;

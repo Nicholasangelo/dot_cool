@@ -1,7 +1,10 @@
 import * as React from 'react';
 import cowboyNick from '../../../../images/cowboyNick.jpg';
+import cowboyNickMd from '../../../../images/cowboy_nicky_mobile.png';
+
 import {
-    imgStyle,
+    ImgStyleLg,
+    ImgStyleMd,
     ImgWrapper,
     hatStyles,
     stareStyles,
@@ -54,9 +57,10 @@ const tips = [
 
 const WhoamiComponent = () => (
     <ImgWrapper className='whoiam_img' bgImg={cowboyNick}>
-        <img style={imgStyle} src={cowboyNick} alt='alt stuff' />
+        <ImgStyleLg src={cowboyNick} alt='Nicholas Angelo, Nicky as is known, Developer' />
+        <ImgStyleMd src={cowboyNickMd} alt='Nicky B. Developer, tall' />
         {tips.map((tip) => (
-            <FeatWrapper style={tip.style}>
+            <FeatWrapper key={tip.name} style={tip.style}>
                 <Tooltip text={tip.text} toolName='feature-tip' align={tip.align} />
             </FeatWrapper>
         ))}

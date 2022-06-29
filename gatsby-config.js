@@ -6,6 +6,9 @@ module.exports = {
         'gatsby-plugin-postcss',
         'gatsby-plugin-react-helmet',
         'gatsby-plugin-styled-components',
+        'gatsby-plugin-image',
+        'gatsby-plugin-sharp',
+        'gatsby-transformer-sharp',
         {
             resolve: 'gatsby-plugin-prettier-eslint',
             // this is the default configuration, override only what you need

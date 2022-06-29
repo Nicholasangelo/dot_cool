@@ -13,20 +13,17 @@ import mySql_logo from './mySql.png';
 import node_logo from './nodejs.png';
 
 export const logos = [
-	{ name: 'React', src: react_logo },
-	{ name: 'Adobe', src: adobe_logo },
-	{ name: 'AngularTS', src: angularts_logo },
-	{ name: 'AngularJs', src: angularjs_logo },
-	{ name: 'Bootstrap', src: bootstrap_logo },
-	{ name: 'CSS', src: css_logo },
-	{ name: 'Git', src: git_logo },
-	{ name: 'Github', src: github_logo }, 
-	{ name: 'HTML', src: html_logo },
-	{ name: 'Javascript', src: javascript_logo },
-	{ name: 'Monogo Db', src: mongo_logo },
-	{ name: 'mySQL', src: mySql_logo },
-	{ name: 'Node', src: node_logo },
-	{ name: 'HTML', src: shangkini },
-	{ name: 'Javascript', src: starbucks },
-	{ name: 'Monogo Db', src: zither }
+    { name: 'React', src: react_logo },
+    { name: 'Adobe', src: adobe_logo },
+    { name: 'AngularTS', src: angularts_logo },
+    { name: 'AngularJs', src: angularjs_logo },
+    { name: 'Bootstrap', src: bootstrap_logo },
+    { name: 'CSS', src: css_logo },
+    { name: 'Git', src: git_logo },
+    { name: 'Github', src: github_logo },
+    { name: 'HTML', src: html_logo },
+    { name: 'Javascript', src: javascript_logo },
+    { name: 'Monogo Db', src: mongo_logo },
+    { name: 'mySQL', src: mySql_logo },
+    { name: 'Node', src: node_logo },
 ];

@@ -1,10 +1,24 @@
 import styled from 'styled-components';
 
-export const imgStyle = {
-    width: '100%',
-    height: '100%',
-    objectFit: 'cover',
-};
+export const ImgStyleLg = styled.img`
+    display: none;
+    @media only screen and (min-width: 900px) {
+        display: block;
+        width: 100%;
+        height: 100%;
+        objectfit: cover;
+    }
+`;
+
+export const ImgStyleMd = styled.img`
+    width: 100%;
+    height: 100%;
+    objectfit: cover;
+    @media only screen and (min-width: 899px) {
+        display: none;
+    }
+`;
+
 export const ImgWrapper = styled.div`
     position: relative;
     display: flex;
